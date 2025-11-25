@@ -40,6 +40,8 @@
     };
 };
 
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
 &spi1 {
     status = "okay";
     compatible = "nordic,nrf-spim";
@@ -54,9 +56,14 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        automouse-layer = <4>;
-	scroll-layers = <5>;
-	snipe-layers = <6>;
+		cpi = <600>;
+        // swap-xy; /* optional */
+        // invert-x; /* optional */
+        // invert-y; /* optional */
+        evt-type = <INPUT_EV_REL>;
+        x-input-code = <INPUT_REL_X>;
+        y-input-code = <INPUT_REL_Y>;
+        force-awake;
     };
 };
 
