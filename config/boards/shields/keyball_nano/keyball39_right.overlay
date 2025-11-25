@@ -19,7 +19,6 @@
 		, <&pro_micro 8 GPIO_ACTIVE_HIGH>
         , <&pro_micro 9 GPIO_ACTIVE_HIGH>
 		;
-};
 
 &pinctrl {
     spi1_default: spi1_default {
