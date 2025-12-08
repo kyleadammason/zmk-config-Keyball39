@@ -34,7 +34,6 @@
             low-power-enable;
         };
     };
-};
 
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
