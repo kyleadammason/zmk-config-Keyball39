@@ -93,14 +93,13 @@
         };
 
         navigation_layer {
+            label = "NAV";
             bindings = <
 &none  &kp C_REWIND  &kp C_PLAY_PAUSE  &kp C_FAST_FORWARD  &kp LS(LC(O))                  &kp C_VOLUME_UP    &kp HOME  &kp UP    &kp END    &kp PAGE_UP
 &none  &none         &none             &none               &kp LG(LA(K))                  &kp C_VOLUME_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
 &none  &none         &none             &none               &kp LG(LS(S))                  &kp C_MUTE         &none     &none     &none      &none
 &none  &none         &none             &trans              &trans         &trans  &trans  &trans                                            &none
             >;
-
-            label = "NAV";
         };
 
         mouse_layer {
@@ -126,22 +125,57 @@
         snipe_layer {
             label = "SNIPE";
             bindings = <
-&trans  &trans  &trans  &trans  &bootloader                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
         };
 
         settings_layer {
+            label = "SET";
             bindings = <
 &none  &none  &none  &bt BT_CLR  &bt BT_SEL 0                  &none   &none      &none  &none  &sys_reset
 &none  &none  &none  &none       &bt BT_SEL 1                  &none   &soft_off  &none  &none  &bootloader
 &none  &none  &none  &none       &bt BT_SEL 2                  &none   &none      &none  &none  &none
 &none  &none  &none  &trans      &trans        &trans  &trans  &trans                           &none
             >;
+        };
 
-            label = "SET";
+        Nav_Browser {
+            bindings = <
+&none  &none  &none  &none   &none  &none  &kp LC(T)           &kp LS(LC(TAB))  &kp LC(W)            &none
+&none  &none  &none  &trans  &none  &none  &kp LA(LEFT_ARROW)  &kp LC(TAB)      &kp LA(RIGHT_ARROW)  &none
+&none  &none  &none  &none   &none  &none  &none               &none            &none                &none
+&none  &none  &none  &trans      &trans        &trans  &trans  &trans                           &none
+            >;
+        };
+
+        Nav_Window {
+            bindings = <
+&none  &none  &none   &none  &none  &none  &kp LG(UP_ARROW)    &kp LG(LA(UP_ARROW))    &kp LG(DOWN_ARROW)   &none
+&none  &none  &trans  &none  &none  &none  &kp LG(LEFT_ARROW)  &kp LA(LG(DOWN_ARROW))  &kp LG(RIGHT_ARROW)  &none
+&none  &none  &none   &none  &none  &none  &none               &none                   &none                &none
+&none  &none  &none  &trans      &trans        &trans  &trans  &trans                           &none
+            >;
+        };
+
+        Nav_Screen {
+            bindings = <
+&none  &none   &none  &none  &none  &none  &kp LC(N)               &none            &kp LA(F4)               &none
+&none  &trans  &none  &none  &none  &none  &kp LG(LS(LEFT_ARROW))  &kp LA(LC(TAB))  &kp LS(LG(RIGHT_ARROW))  &none
+&none  &none   &none  &none  &none  &none  &none                   &none            &none                    &none
+&none  &none  &none  &trans      &trans        &trans  &trans  &trans                           &none
+            >;
+        };
+
+        Nav_Desktop {
+            bindings = <
+&none   &none  &none  &none  &none  &none  &kp LG(LC(D))           &none        &kp LC(LG(F4))           &none
+&trans  &none  &none  &none  &none  &none  &kp LG(LC(LEFT_ARROW))  &kp LG(TAB)  &kp LG(LC(RIGHT_ARROW))  &none
+&none   &none  &none  &none  &none  &none  &none                   &none        &none                    &none
+&none  &none  &none  &trans      &trans        &trans  &trans  &trans                           &none
+            >;
         };
     };
 };
