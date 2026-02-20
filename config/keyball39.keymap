@@ -64,6 +64,13 @@
             bindings = <&mo 5 &kp LCTRL>;
             label = "HOLDZOOM";
         };
+
+        Select_All_And_Copy: Select_All_And_Copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp LC(C)>;
+            label = "SELECT_ALL_AND_COPY";
+        };
     };
 
     combos {
@@ -114,8 +121,8 @@
             label = "Alpha";
             bindings = <
 &kp Q  &kp W  &kp F  &kp P       &kp G                                      &kp J        &kp L  &kp U              &kp Y             &kp SEMI
-&kp A  &kp R  &kp S  &kp T       &kp D                                      &kp H        &kp N  &kp E              &kp I             &kp O
-&kp Z  &kp X  &kp C  &kp V       &kp B                                      &kp K        &kp M  &mt EXCL QUESTION  &mt COMMA PERIOD  &mt DOUBLE_QUOTES SINGLE_QUOTE
+&mt &Select_All_And_Copy A  &kp R  &kp S  &kp T       &kp D                                      &kp H        &kp N  &kp E              &kp I             &kp O
+&mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C  &mt LC(V) V        &kp B                                      &kp K        &kp M  &mt EXCL QUESTION  &mt COMMA PERIOD  &mt DOUBLE_QUOTES SINGLE_QUOTE
 &none  &none  &none  &kp DELETE  &kp LEFT_SHIFT  &lt 1 DELETE  &lt 2 ENTER  &lt 3 SPACE                                              &key_repeat
             >;
         };
