@@ -143,9 +143,9 @@
         navigation_layer {
             label = "NAV";
             bindings = <
-&none   &kp C_REWIND  &kp C_PLAY_PAUSE  &kp C_FAST_FORWARD  &kp LS(LC(O))                  &kp C_VOLUME_UP    &kp HOME  &kp UP    &kp END    &kp PAGE_UP
-&mo 11  &mo 10        &mo 9             &mo 8               &kp LG(LA(K))                  &kp C_VOLUME_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
-&none   &none         &none             &none               &kp LG(LS(S))                  &kp C_MUTE         &none     &none     &none      &none
+&mt LG(LC(F4)) LA(F4)          &kp LG(DOWN_ARROW)  &kp LG(LA(UP_ARROW))  &kp LG(UP_ARROW)  &mt LC(LG(D)) LC(N)              &kp C_VOLUME_UP  &kp HOME       &kp UP_ARROW   &kp END        &kp PG_UP
+&mt LG(LC(LEFT)) LG(LS(LEFT))  &kp LG(LEFT)        &kp LG(LA(DOWN))      &kp LG(RIGHT)     &mt LG(LC(RIGHT)) LG(LS(RIGHT))  &kp C_VOL_DN     &kp LEFT       &kp DOWN       &kp RIGHT      &kp PG_DN
+&none                          &kp LG(TAB)         &kp LC(LA(TAB))       &mo 5             &kp LG(Z)                        &kp C_MUTE       &kp LG(LA(K))  &kp LC(LS(O))  &kp LG(LS(S))  &none
 &none   &none         &none             &trans              &trans         &trans  &trans  &trans                                            &none
             >;
         };
@@ -192,9 +192,9 @@
 
         Nav_Browser {
             bindings = <
-&none  &none  &none  &none   &none                   &none   &kp LC(T)           &kp LS(LC(TAB))  &kp LC(W)            &none
-&none  &none  &none  &trans  &none                   &none   &kp LA(LEFT_ARROW)  &kp LC(TAB)      &kp LA(RIGHT_ARROW)  &none
-&none  &none  &none  &none   &none                   &none   &none               &none            &none                &none
+&none  &none  &none  &none   &none  &kp LS(LC(T))  &mt LC(LS(K)) LC(T)  &kp LS(LC(TAB))  &kp LC(W)            &none
+&none  &none  &none  &none   &none  &kp LA(D)      &kp LA(LEFT_ARROW)   &kp LC(TAB)      &kp LA(RIGHT_ARROW)  &none
+&none  &none  &none  &trans  &none  &none          &none                &none            &none                &none
 &none  &none  &none  &trans  &trans  &trans  &trans  &trans                                                            &none
             >;
         };
