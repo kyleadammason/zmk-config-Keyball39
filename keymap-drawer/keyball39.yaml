@@ -25,7 +25,7 @@ layers:
   - {t: X, h: Ctl+X}
   - {t: C, h: Ctl+C}
   - {t: V, h: Ctl+V}
-  - B
+  - {t: B, h: Ctl+Y}
   - K
   - M
   - {t: '?', s: '!'}
