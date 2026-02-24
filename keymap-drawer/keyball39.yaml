@@ -11,7 +11,7 @@ layers:
   - U
   - Y
   - {t: ;, s: ':'}
-  - A
+  - {t: A, s: '&Select_All_And_Copy'}
   - R
   - S
   - T
