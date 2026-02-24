@@ -37,7 +37,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:backspace-reverse-outline$$', h: NUM}
-  - {t: '$$mdi:keyboard-return$$', h: SYM}
+  - SYM
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - '&key_repeat'
   NUM:
