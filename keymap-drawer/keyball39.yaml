@@ -136,7 +136,7 @@ layers:
   - Gui+Alt+$$mdi:arrow-down-bold$$
   - Gui+$$mdi:arrow-right-bold$$
   - {t: 'Gui+Sft+$$mdi:arrow-right-bold$$', h: 'Gui+Ctl+$$mdi:arrow-right-bold$$'}
-  - $$mdi:volume-low$$
+  - {t: '$$mdi:volume-low$$', h: '$$mdi:volume-off$$'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -146,7 +146,7 @@ layers:
   - Ctl+Alt+$$mdi:keyboard-tab$$
   - SCROLL
   - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
-  - $$mdi:volume-off$$
+  - '&TD_Media'
   - Gui+Alt+K
   - Ctl+Sft+O
   - Gui+Sft+S
