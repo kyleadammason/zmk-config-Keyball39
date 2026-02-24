@@ -48,6 +48,24 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        Shift_period_comma: Shift_period_comma {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SHIFT_PERIOD_COMMA";
+            bindings = <&kp PERIOD>, <&kp COMMA>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        Shift_question_exclaim: Shift_question_exclaim {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SHIFT_QUESTION_EXCLAIM";
+            bindings = <&kp QUESTION>, <&kp EXCL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -120,10 +138,10 @@
         default_layer {
             label = "Alpha";
             bindings = <
-&kp Q  &kp W  &kp F  &kp P       &kp G                                      &kp J        &kp L  &kp U              &kp Y             &kp SEMI
-&kp A  &kp R  &kp S  &kp T       &kp D                                      &kp H        &kp N  &kp E              &kp I             &kp O
-&mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C  &mt LC(V) V        &kp B                                      &kp K        &kp M  &mt EXCL QUESTION  &mt COMMA PERIOD  &mt DOUBLE_QUOTES SINGLE_QUOTE
-&none  &none  &none  &kp DELETE  &kp LEFT_SHIFT  &lt 1 DELETE  &lt 2 ENTER  &lt 3 SPACE                                              &key_repeat
+&kp Q        &kp W        &kp F        &kp P        &kp G                                      &kp J        &kp L  &kp U                    &kp Y                &kp SEMI
+&kp A        &kp R        &kp S        &kp T        &kp D                                      &kp H        &kp N  &kp E                    &kp I                &kp O
+&mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C  &mt LC(V) V  &kp B                                      &kp K        &kp M  &Shift_question_exclaim  &Shift_period_comma  &kp SINGLE_QUOTE
+&none        &none        &none        &kp DELETE   &kp LEFT_SHIFT  &lt 1 DELETE  &lt 2 ENTER  &lt 3 SPACE                                                       &key_repeat
             >;
         };
 
