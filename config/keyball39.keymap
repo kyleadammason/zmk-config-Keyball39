@@ -75,6 +75,13 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
         };
+
+        TD_Media: TD_Media {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_MEDIA";
+            #binding-cells = <0>;
+            bindings = <&kp C_PLAY_PAUSE>, <&kp C_FAST_FORWARD>, <&kp C_REWIND>;
+        };
     };
 
     macros {
@@ -177,10 +184,10 @@
         navigation_layer {
             label = "NAV";
             bindings = <
-&mt LG(LC(F4)) LA(F4)          &kp LG(DOWN_ARROW)  &kp LG(LA(UP_ARROW))  &kp LG(UP_ARROW)  &mt LC(LG(D)) LC(N)                              &kp C_VOLUME_UP  &kp HOME       &kp UP_ARROW   &kp END        &kp PG_UP
-&mt LG(LC(LEFT)) LG(LS(LEFT))  &kp LG(LEFT)        &kp LG(LA(DOWN))      &kp LG(RIGHT)     &mt LG(LC(RIGHT)) LG(LS(RIGHT))                  &kp C_VOL_DN     &kp LEFT       &kp DOWN       &kp RIGHT      &kp PG_DN
-&none                          &kp LG(TAB)         &kp LC(LA(TAB))       &mo 5             &kp LG(Z)                                        &kp C_MUTE       &kp LG(LA(K))  &kp LC(LS(O))  &kp LG(LS(S))  &none
-&none                          &none               &none                 &trans            &trans                           &trans  &trans  &trans                                                        &none
+&mt LG(LC(F4)) LA(F4)          &kp LG(DOWN_ARROW)  &kp LG(LA(UP_ARROW))  &kp LG(UP_ARROW)  &mt LC(LG(D)) LC(N)                              &kp C_VOLUME_UP           &kp HOME       &kp UP_ARROW   &kp END        &kp PG_UP
+&mt LG(LC(LEFT)) LG(LS(LEFT))  &kp LG(LEFT)        &kp LG(LA(DOWN))      &kp LG(RIGHT)     &mt LG(LC(RIGHT)) LG(LS(RIGHT))                  &mt C_MUTE C_VOLUME_DOWN  &kp LEFT       &kp DOWN       &kp RIGHT      &kp PG_DN
+&none                          &kp LG(TAB)         &kp LC(LA(TAB))       &mo 5             &kp LG(Z)                                        &TD_Media                 &kp LG(LA(K))  &kp LC(LS(O))  &kp LG(LS(S))  &none
+&none                          &none               &none                 &trans            &trans                           &trans  &trans  &trans                                                                 &none
             >;
         };
 
