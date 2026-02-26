@@ -102,7 +102,7 @@
         Select_All_And_Copy: Select_All_And_Copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(A) &kp LC(C)>;
+            bindings = <&kp LC(A) &kp LC(C) &kp RIGHT>;
             label = "SELECT_ALL_AND_COPY";
         };
     };
