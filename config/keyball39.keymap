@@ -170,7 +170,7 @@
             label = "NUM";
             bindings = <
 &none           &none         &none         &none                   &kp LS(LA(LC(C)))                  &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
-&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &kp RCTRL               &kp DOLLAR                         &kp PERIOD    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0
+&kp LEFT_SHIFT  &sk LEFT_ALT  &sk LEFT_GUI  &sk RCTRL               &kp DOLLAR                         &kp PERIOD    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0
 &none           &none         &none         &kp LA(LC(LEFT_SHIFT))  &kp EQUAL                          &kp SLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
 &none           &none         &none         &trans                  &trans             &trans  &trans  &trans                                                  &none
             >;
