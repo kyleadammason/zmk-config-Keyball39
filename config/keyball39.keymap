@@ -95,7 +95,11 @@
         HoldZoom: HoldZoom {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&mo 5 &kp LCTRL>;
+            bindings =
+                <&macro_press>,
+                <&mo 5 &kp LCTRL>,
+                <&macro_release>,
+                <&mo 5 &kp LCTRL>;
 
             label = "HOLDZOOM";
         };
@@ -153,7 +157,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "Alpha";
+            label = "ABC";
             bindings = <
 &kp Q                 &kp W        &kp F        &kp P        &kp G                                &kp J        &kp L  &kp U                    &kp Y                &kp SEMI
 &MM_SelectAllAndCopy  &kp R        &kp S        &kp T        &kp D                                &kp H        &kp N  &kp E                    &kp I                &kp O
