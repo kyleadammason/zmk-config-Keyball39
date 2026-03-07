@@ -35,7 +35,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '&key_repeat', h: '$$mdi:apple-keyboard-control$$'}
-  - $$mdi:apple-keyboard-shift$$
+  - '&TD_shift_kp_sk'
   - {t: '$$mdi:backspace-reverse-outline$$', h: NUM}
   - SYM
   - {t: '$$mdi:keyboard-space$$', h: NAV}
@@ -281,7 +281,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SET:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Ctl+Alt+$$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:bluetooth-off$$
@@ -297,7 +297,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&soft_off'
+  - EP TOG
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:progress-download$$
@@ -362,7 +362,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
 - p: [1, 2]
-  k: $$mdi:keyboard-esc$$
+  k: {t: '$$mdi:keyboard-esc$$', h: 'Alt+Ctl+$$mdi:backspace-reverse-outline$$'}
 - p: [21, 22]
   k: $$mdi:keyboard-tab$$
 - p: [7, 8]
