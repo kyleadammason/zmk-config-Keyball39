@@ -10,6 +10,7 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -20,12 +21,11 @@
 };
 
 &mt {
-    tapping-term-ms = <200>;
     flavor = "tap-preferred";
     quick-tap-ms = <150>;
 };
 
-&caps_word { continue-list = <UNDERSCORE MINUS>; };
+&caps_word { continue-list = <UNDERSCORE MINUS BACKSPACE>; };
 
 / {
     // custom shift using mod-morph 
@@ -49,18 +49,18 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        Shift_period_comma: Shift_period_comma {
+        MM_Shift_period_comma: MM_Shift_period_comma {
             compatible = "zmk,behavior-mod-morph";
-            label = "SHIFT_PERIOD_COMMA";
+            label = "MM_SHIFT_PERIOD_COMMA";
             bindings = <&kp PERIOD>, <&kp COMMA>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
-        Shift_question_exclaim: Shift_question_exclaim {
+        MM_Shift_question_exclaim: MM_Shift_question_exclaim {
             compatible = "zmk,behavior-mod-morph";
-            label = "SHIFT_QUESTION_EXCLAIM";
+            label = "MM_SHIFT_QUESTION_EXCLAIM";
             bindings = <&kp QUESTION>, <&kp EXCL>;
 
             #binding-cells = <0>;
@@ -91,6 +91,23 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        HT_long_hold: HT_long_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_LONG_HOLD";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <750>;
+        };
+
+        TD_shift_kp_sk: TD_shift_kp_sk {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SHIFT_KP_SK";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&sk LEFT_SHIFT>;
+        };
     };
 
     macros {
@@ -119,7 +136,7 @@
         compatible = "zmk,combos";
 
         Esc_combo {
-            bindings = <&kp ESC>;
+            bindings = <&HT_long_hold LA(LC(DELETE)) ESCAPE>;
             key-positions = <1 2>;
         };
 
@@ -162,10 +179,10 @@
         default_layer {
             label = "ABC";
             bindings = <
-&kp Q                 &kp W        &kp F        &kp P                    &kp G                                &kp J        &kp L  &kp U                    &kp Y                &kp SEMI
-&MM_SelectAllAndCopy  &kp R        &kp S        &kp T                    &kp D                                &kp H        &kp N  &kp E                    &kp I                &kp O
-&mt LC(Z) Z           &mt LC(X) X  &mt LC(C) C  &mt LC(V) V              &mt LC(Y) B                          &kp K        &kp M  &Shift_question_exclaim  &Shift_period_comma  &kp SINGLE_QUOTE
-&none                 &none        &none        &HT_ctrl_repeat LCTRL 0  &kp LEFT_SHIFT  &lt 1 DELETE  &mo 2  &lt 3 SPACE                                                       &none
+&kp Q                 &kp W        &kp F        &kp P                    &kp G                                 &kp J        &kp L  &kp U                       &kp Y                   &kp SEMI
+&MM_SelectAllAndCopy  &kp R        &kp S        &kp T                    &kp D                                 &kp H        &kp N  &kp E                       &kp I                   &kp O
+&mt LC(Z) Z           &mt LC(X) X  &mt LC(C) C  &mt LC(V) V              &mt LC(Y) B                           &kp K        &kp M  &MM_Shift_question_exclaim  &MM_Shift_period_comma  &kp SINGLE_QUOTE
+&none                 &none        &none        &HT_ctrl_repeat LCTRL 0  &TD_shift_kp_sk  &lt 1 DELETE  &mo 2  &lt 3 SPACE                                                             &none
             >;
         };
 
@@ -232,10 +249,10 @@
         settings_layer {
             label = "SET";
             bindings = <
-&none  &none  &none  &bt BT_CLR  &bt BT_SEL 0                  &none   &none      &none  &none  &sys_reset
-&none  &none  &none  &none       &bt BT_SEL 1                  &none   &soft_off  &none  &none  &bootloader
-&none  &none  &none  &none       &bt BT_SEL 2                  &none   &none      &none  &none  &none
-&none  &none  &none  &trans      &trans        &trans  &trans  &trans                           &none
+&kp LC(LA(DELETE))  &none  &none  &bt BT_CLR  &bt BT_SEL 0                  &none   &none              &none  &none  &sys_reset
+&none               &none  &none  &none       &bt BT_SEL 1                  &none   &ext_power EP_TOG  &none  &none  &bootloader
+&none               &none  &none  &none       &bt BT_SEL 2                  &none   &none              &none  &none  &none
+&none               &none  &none  &trans      &trans        &trans  &trans  &trans                                   &none
             >;
         };
 
