@@ -171,7 +171,7 @@ layers:
   - {t: SCROLL, h: toggle}
   - '&HoldZoom'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: MOUSE, h: toggle}
   - $$mdi:mouse-right-click-outline$$
   - SCROLL
   - $$mdi:mouse-left-click-outline$$
@@ -180,7 +180,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - SCROLL
   - $$mdi:mouse-right-click-outline$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: MOUSE, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - SNIPE
   - '&mkp MB5'
