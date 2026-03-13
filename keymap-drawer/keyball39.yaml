@@ -403,7 +403,7 @@ layers:
   NAV_AHK:
   - {t: Alt+F4, h: Gui+Ctl+F4}
   - Gui+Alt+Ctl+F2
-  - Gui+Alt+$$mdi:arrow-up-bold$$
+  - Gui+$$mdi:arrow-down-bold$$
   - Gui+$$mdi:arrow-up-bold$$
   - {t: Ctl+N, h: Ctl+Gui+D}
   - $$mdi:volume-high$$
