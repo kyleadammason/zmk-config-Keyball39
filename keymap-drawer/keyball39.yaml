@@ -457,3 +457,12 @@ combos:
   l: [ABC]
 - p: [17, 18]
   k: {t: 'Ctl+$$mdi:backspace$$', type: backspace}
+- p: [1, 11]
+  k: Alt+Ctl+Gui+F5
+  l: [NAV_AHK]
+- p: [11, 21]
+  k: Ctl+Alt+Gui+F6
+  l: [NAV_AHK]
+- p: [13, 12]
+  k: Alt+Ctl+Gui+F7
+  l: [NAV_AHK]

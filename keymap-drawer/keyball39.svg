@@ -2859,6 +2859,24 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="630" y="75" width="28" height="26" class="combo backspace"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="635" y="79" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
 </g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="70" y="50" width="28" height="26" class="combo"/>
+<text x="84" y="63" class="combo tap">
+<tspan x="84" dy="-0.6em" style="font-size: 60%">Alt+</tspan><tspan x="84" dy="1.2em" style="font-size: 60%">Ctl+Gui+F5</tspan>
+</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="70" y="106" width="28" height="26" class="combo"/>
+<text x="84" y="119" class="combo tap">
+<tspan x="84" dy="-0.6em" style="font-size: 60%">Ctl+</tspan><tspan x="84" dy="1.2em" style="font-size: 60%">Alt+Gui+F6</tspan>
+</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="154" y="75" width="28" height="26" class="combo"/>
+<text x="168" y="88" class="combo tap">
+<tspan x="168" dy="-0.6em" style="font-size: 60%">Alt+</tspan><tspan x="168" dy="1.2em" style="font-size: 60%">Ctl+Gui+F7</tspan>
+</text>
+</g>
 </g>
 </g>
 </svg>
