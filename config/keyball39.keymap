@@ -108,6 +108,15 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&sk LEFT_SHIFT>;
         };
+
+        MT_MOvsTOG: MT_MOvsTOG {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_MOVSTOG";
+            bindings = <&mo>, <&tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     macros {
@@ -237,10 +246,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&none   &HoldZoom  &tog 5    &kp LG(TAB)  &none                      &none      &kp LG(TAB)  &tog 5    &HoldZoom  &none
-&tog 4  &mkp RCLK  &mo 5     &mkp LCLK    &mkp MCLK                  &mkp MCLK  &mkp LCLK    &mo 5     &mkp RCLK  &tog 4
-&none   &mo 6      &mkp MB5  &mkp MB4     &none                      &none      &mkp MB4     &mkp MB5  &mo 6      &none
-&none   &none      &none     &trans       &trans     &trans  &trans  &trans                                       &none
+&none   &HoldZoom  &tog 5           &kp LG(TAB)  &none                      &none      &kp LG(TAB)  &tog 5           &HoldZoom  &none
+&tog 4  &mkp RCLK  &MT_MOvsTOG 5 5  &mkp LCLK    &mkp MCLK                  &mkp MCLK  &mkp LCLK    &MT_MOvsTOG 5 5  &mkp RCLK  &tog 4
+&none   &mo 6      &mkp MB5         &mkp MB4     &none                      &none      &mkp MB4     &mkp MB5         &mo 6      &none
+&none   &none      &none            &trans       &trans     &trans  &trans  &trans                                              &none
             >;
         };
 
