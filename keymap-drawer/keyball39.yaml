@@ -38,7 +38,7 @@ layers:
   - '&TD_shift_kp_sk'
   - {t: '$$mdi:backspace-reverse-outline$$', h: NUM}
   - SYM
-  - {t: '$$mdi:keyboard-space$$', h: NAV2}
+  - {t: '$$mdi:keyboard-space$$', h: NAV_AHK}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   NUM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -384,6 +384,46 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Gui+$$mdi:keyboard-tab$$
   - Ctl+Alt+$$mdi:keyboard-tab$$
+  - Nav_Browser
+  - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
+  - '&TD_Media'
+  - Gui+Alt+K
+  - Ctl+Sft+O
+  - Gui+Sft+S
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  NAV_AHK:
+  - {t: Alt+F4, h: Gui+Ctl+F4}
+  - Gui+Alt+Ctl+F2
+  - Gui+Alt+$$mdi:arrow-up-bold$$
+  - Gui+$$mdi:arrow-up-bold$$
+  - {t: Ctl+N, h: Ctl+Gui+D}
+  - $$mdi:volume-high$$
+  - HOME
+  - $$mdi:arrow-up-bold$$
+  - END
+  - PG UP
+  - {t: 'Gui+Sft+$$mdi:arrow-left-bold$$', h: 'Gui+Ctl+$$mdi:arrow-left-bold$$'}
+  - {t: Alt+Ctl+Gui+F3, h: Gui+Alt+Ctl+F1}
+  - {t: Alt+Ctl+Gui+F8, h: Gui+Alt+Ctl+F7}
+  - Gui+Alt+Ctl+F9
+  - {t: 'Gui+Sft+$$mdi:arrow-right-bold$$', h: 'Gui+Ctl+$$mdi:arrow-right-bold$$'}
+  - {t: '$$mdi:volume-low$$', h: '$$mdi:volume-off$$'}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - PG DN
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Gui+Alt+Ctl+F4
+  - {t: 'Ctl+Alt+$$mdi:keyboard-tab$$', h: 'Gui+$$mdi:keyboard-tab$$'}
   - Nav_Browser
   - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
   - '&TD_Media'
