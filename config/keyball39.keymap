@@ -171,6 +171,24 @@
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <17 18>;
         };
+
+        combo_vertical_top23rds {
+            bindings = <&kp LA(LC(LG(F5)))>;
+            key-positions = <1 11>;
+            layers = <10>;
+        };
+
+        combo_vertical_bottom23rds {
+            bindings = <&kp LC(LA(LG(F6)))>;
+            key-positions = <11 21>;
+            layers = <10>;
+        };
+
+        combo_horizontal_full {
+            bindings = <&kp LA(LC(LG(F7)))>;
+            key-positions = <13 12>;
+            layers = <10>;
+        };
     };
 
     keymap {
