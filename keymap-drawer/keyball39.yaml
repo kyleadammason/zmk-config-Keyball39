@@ -182,14 +182,14 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - {t: MOUSE, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - SNIPE
+  - {t: SNIPE, h: SNIPE}
   - '&mkp MB5'
   - '&mkp MB4'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&mkp MB4'
   - '&mkp MB5'
-  - SNIPE
+  - {t: SNIPE, h: SNIPE}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
