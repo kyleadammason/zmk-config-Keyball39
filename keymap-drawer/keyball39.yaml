@@ -372,9 +372,9 @@ layers:
   - END
   - PG UP
   - {t: 'Gui+Sft+$$mdi:arrow-left-bold$$', h: 'Gui+Ctl+$$mdi:arrow-left-bold$$'}
-  - Gui+$$mdi:arrow-left-bold$$
+  - '&Macro_FancyZones_MoveLeft'
   - Gui+$$mdi:arrow-down-bold$$
-  - Gui+$$mdi:arrow-right-bold$$
+  - '&Macro_FancyZones_MoveRight'
   - {t: 'Gui+Sft+$$mdi:arrow-right-bold$$', h: 'Gui+Ctl+$$mdi:arrow-right-bold$$'}
   - {t: '$$mdi:volume-low$$', h: '$$mdi:volume-off$$'}
   - $$mdi:arrow-left-bold$$
