@@ -139,6 +139,34 @@
             bindings = <&kp LC(A) &kp LC(C) &kp RIGHT>;
             label = "SELECT_ALL_AND_COPY";
         };
+
+        Macro_FancyZones_MoveRight: Macro_FancyZones_MoveWindow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI>,
+                <&macro_tap>,
+                <&kp RIGHT>,
+                <&macro_release>,
+                <&kp LEFT_GUI>;
+
+            label = "MACRO_FANCYZONES_MOVEWINDOW";
+        };
+
+        Macro_FancyZones_MoveLeft: Macro_FancyZones_MoveLeft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI>,
+                <&macro_tap>,
+                <&kp LEFT>,
+                <&macro_release>,
+                <&kp LEFT_GUI>;
+
+            label = "MACRO_FANCYZONES_MOVELEFT";
+        };
     };
 
     combos {
@@ -296,7 +324,7 @@
             label = "NAV2";
             bindings = <
 &mt LG(LC(F4)) LA(F4)          &mt LG(LC(LA(NUMBER_1))) LG(LC(LA(NUMBER_2)))  &kp LG(UP_ARROW)  &mt LG(LC(LA(N0))) LG(LC(LA(NUMBER_3)))  &mt LC(LG(D)) LC(N)                              &kp C_VOLUME_UP           &kp HOME       &kp UP_ARROW   &kp END        &kp PG_UP
-&mt LG(LC(LEFT)) LG(LS(LEFT))  &kp LG(LEFT)                                   &kp LG(DOWN)      &kp LG(RIGHT)                            &mt LG(LC(RIGHT)) LG(LS(RIGHT))                  &mt C_MUTE C_VOLUME_DOWN  &kp LEFT       &kp DOWN       &kp RIGHT      &kp PG_DN
+&mt LG(LC(LEFT)) LG(LS(LEFT))  &Macro_FancyZones_MoveLeft                     &kp LG(DOWN)      &Macro_FancyZones_MoveRight              &mt LG(LC(RIGHT)) LG(LS(RIGHT))                  &mt C_MUTE C_VOLUME_DOWN  &kp LEFT       &kp DOWN       &kp RIGHT      &kp PG_DN
 &none                          &kp LG(TAB)                                    &kp LC(LA(TAB))   &mo 8                                    &kp LG(Z)                                        &TD_Media                 &kp LG(LA(K))  &kp LC(LS(O))  &kp LG(LS(S))  &none
 &none                          &none                                          &none             &trans                                   &trans                           &trans  &trans  &trans                                                                 &none
             >;
