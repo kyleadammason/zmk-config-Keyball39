@@ -237,7 +237,7 @@
 &kp Q                 &kp W        &kp F        &kp P                    &kp G                                 &kp J        &kp L  &kp U                       &kp Y                   &kp SEMI
 &MM_SelectAllAndCopy  &kp R        &kp S        &kp T                    &kp D                                 &kp H        &kp N  &kp E                       &kp I                   &kp O
 &mt LC(Z) Z           &mt LC(X) X  &mt LC(C) C  &mt LC(V) V              &mt LC(Y) B                           &kp K        &kp M  &MM_Shift_question_exclaim  &MM_Shift_period_comma  &kp SINGLE_QUOTE
-&none                 &none        &none        &HT_ctrl_repeat LCTRL 0  &TD_shift_kp_sk  &lt 1 DELETE  &mo 2  &lt 9 SPACE                                                             &none
+&none                 &none        &none        &HT_ctrl_repeat LCTRL 0  &TD_shift_kp_sk  &lt 1 DELETE  &mo 2  &lt 3 SPACE                                                             &none
             >;
         };
 
