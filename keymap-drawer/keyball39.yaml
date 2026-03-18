@@ -38,7 +38,7 @@ layers:
   - '&TD_shift_kp_sk'
   - {t: '$$mdi:backspace-reverse-outline$$', h: NUM}
   - SYM
-  - {t: '$$mdi:keyboard-space$$', h: NAV_AHK}
+  - {t: '$$mdi:keyboard-space$$', h: NAV2}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   NUM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -398,7 +398,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   NAV_AHK:
   - {t: Alt+F4, h: Gui+Ctl+F4}
@@ -438,7 +438,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
 - p: [1, 2]
