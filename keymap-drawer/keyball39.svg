@@ -1817,6 +1817,9 @@ rect.held, rect.combo.held {
 <g transform="translate(84, 147)" class="key held keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
+<a href="#SNIPE">
+<text x="0" y="-4" class="key held tap layer-activator">SNIPE</text>
+</a><text x="0" y="24" class="key held hold">toggle</text>
 </g>
 <g transform="translate(140, 140)" class="key trans keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1851,6 +1854,9 @@ rect.held, rect.combo.held {
 <g transform="translate(672, 147)" class="key held alternate keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held alternate side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held alternate"/>
+<a href="#SNIPE">
+<text x="0" y="-4" class="key held alternate tap layer-activator">SNIPE</text>
+</a><text x="0" y="24" class="key held alternate hold">toggle</text>
 </g>
 <g transform="translate(728, 161)" class="key trans keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
