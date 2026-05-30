@@ -237,7 +237,7 @@
 &kp Q                 &kp W        &kp F        &kp P                    &kp G                                 &kp J        &kp L  &kp U                       &kp Y                   &kp SEMI
 &MM_SelectAllAndCopy  &kp R        &kp S        &kp T                    &kp D                                 &kp H        &kp N  &kp E                       &kp I                   &kp O
 &mt LC(Z) Z           &mt LC(X) X  &mt LC(C) C  &mt LC(V) V              &mt LC(Y) B                           &kp K        &kp M  &MM_Shift_question_exclaim  &MM_Shift_period_comma  &kp SINGLE_QUOTE
-&none                 &none        &none        &HT_ctrl_repeat LCTRL 0  &TD_shift_kp_sk  &lt 1 DELETE  &mo 2  &lt 3 SPACE                                                             &none
+&mo 4                 &none        &none        &HT_ctrl_repeat LCTRL 0  &TD_shift_kp_sk  &lt 1 DELETE  &mo 2  &lt 3 SPACE                                                             &none
             >;
         };
 
@@ -247,7 +247,7 @@
 &none           &none         &none         &none                   &kp LS(LA(LC(C)))                  &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
 &sk LEFT_SHIFT  &sk LEFT_ALT  &sk LEFT_GUI  &sk RCTRL               &kp DOLLAR                         &kp PERIOD    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0
 &none           &none         &none         &sk LA(LC(LEFT_SHIFT))  &kp EQUAL                          &kp SLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
-&none           &none         &none         &trans                  &trans             &trans  &trans  &trans                                                  &none
+&trans          &none         &none         &trans                  &trans             &trans  &trans  &trans                                                  &none
             >;
         };
 
@@ -257,7 +257,7 @@
 &none        &kp TILDE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none                       &kp ASTRK   &kp LESS_THAN   &kp GREATER_THAN  &kp PIPE       &kp MINUS
 &kp PERCENT  &kp AT     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR                  &kp PERIOD  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp AMPERSAND  &kp POUND
 &none        &none      &kp GRAVE             &kp UNDER              &kp EQUAL                   &kp SLASH   &none           &none             &none          &kp PLUS
-&none        &none      &none                 &trans                 &trans      &trans  &trans  &trans                                                       &none
+&trans       &none      &none                 &trans                 &trans      &trans  &trans  &trans                                                       &none
             >;
         };
 
@@ -267,17 +267,17 @@
 &mt LG(LC(F4)) LA(F4)          &kp LG(DOWN_ARROW)  &kp LG(LA(UP_ARROW))  &kp LG(UP_ARROW)  &mt LC(LG(D)) LC(N)                              &kp C_VOLUME_UP           &kp HOME       &kp UP_ARROW   &kp END        &kp PG_UP
 &mt LG(LC(LEFT)) LG(LS(LEFT))  &kp LG(LEFT)        &kp LG(LA(DOWN))      &kp LG(RIGHT)     &mt LG(LC(RIGHT)) LG(LS(RIGHT))                  &mt C_MUTE C_VOLUME_DOWN  &kp LEFT       &kp DOWN       &kp RIGHT      &kp PG_DN
 &none                          &kp LG(TAB)         &kp LC(LA(TAB))       &mo 8             &kp LG(Z)                                        &TD_Media                 &kp LG(LA(K))  &kp LC(LS(O))  &kp LG(LS(S))  &none
-&none                          &none               &none                 &trans            &trans                           &trans  &trans  &trans                                                                 &none
+&trans                         &none               &none                 &trans            &trans                           &trans  &trans  &trans                                                                 &none
             >;
         };
 
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&none  &none            &HoldZoom        &kp LG(TAB)  &none                      &none      &kp LG(TAB)  &HoldZoom        &none            &none
-&to 4  &mkp RCLK        &MT_MOvsTOG 5 5  &mkp LCLK    &mkp MCLK                  &mkp MCLK  &mkp LCLK    &MT_MOvsTOG 5 5  &mkp RCLK        &tog 4
-&none  &MT_MOvsTOG 6 6  &mkp MB5         &mkp MB4     &none                      &none      &mkp MB4     &mkp MB5         &MT_MOvsTOG 6 6  &none
-&none  &none            &none            &trans       &trans     &trans  &trans  &trans                                                    &none
+&none   &none            &HoldZoom        &kp LG(TAB)  &none                      &none      &kp LG(TAB)  &HoldZoom        &none            &none
+&to 4   &mkp RCLK        &MT_MOvsTOG 5 5  &mkp LCLK    &mkp MCLK                  &mkp MCLK  &mkp LCLK    &MT_MOvsTOG 5 5  &mkp RCLK        &tog 4
+&none   &MT_MOvsTOG 6 6  &mkp MB5         &mkp MB4     &none                      &none      &mkp MB4     &mkp MB5         &MT_MOvsTOG 6 6  &none
+&trans  &none            &none            &trans       &trans     &trans  &trans  &trans                                                    &none
             >;
         };
 
