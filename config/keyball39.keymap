@@ -121,7 +121,6 @@
         swapper: swapper {
             compatible = "zmk,behavior-tri-state";
             label = "SWAPPER";
-            timeout-ms = <1000>;
             #binding-cells = <0>;
             bindings = <&kp LC(LA(TAB))>, <&kp TAB>, <&kp ENTER>;
         };
