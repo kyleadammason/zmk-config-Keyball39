@@ -117,6 +117,19 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+swapper: swapper {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER";
+            value-ms = <1000>; /* 1 second timeout */
+            bindings = <
+                &kt LCTRL  /* Lock Ctrl */
+                &kt LALT   /* Lock Alt */
+                &kp TAB    /* Tap Tab */
+                &kt LALT   /* Unlock Alt on timeout */
+                &kt LCTRL  /* Unlock Ctrl on timeout */
+                &kp RET    /* Tap Enter on timeout to confirm window selection */
+            >;
+        };
     };
 
     macros {
@@ -266,7 +279,7 @@
             bindings = <
 &mt LG(LC(F4)) LA(F4)          &kp LG(DOWN_ARROW)  &kp LG(LA(UP_ARROW))  &kp LG(UP_ARROW)  &mt LC(LG(D)) LC(N)                              &kp C_VOLUME_UP           &kp HOME       &kp UP_ARROW   &kp END        &kp PG_UP
 &mt LG(LC(LEFT)) LG(LS(LEFT))  &kp LG(LEFT)        &kp LG(LA(DOWN))      &kp LG(RIGHT)     &mt LG(LC(RIGHT)) LG(LS(RIGHT))                  &mt C_MUTE C_VOLUME_DOWN  &kp LEFT       &kp DOWN       &kp RIGHT      &kp PG_DN
-&none                          &kp LG(TAB)         &kp LC(LA(TAB))       &mo 8             &kp LG(Z)                                        &TD_Media                 &kp LG(LA(K))  &kp LC(LS(O))  &kp LG(LS(S))  &none
+&none                          &kp LG(TAB)         &swapper      &mo 8             &kp LG(Z)                                        &TD_Media                 &kp LG(LA(K))  &kp LC(LS(O))  &kp LG(LS(S))  &none
 &trans                         &none               &none                 &trans            &trans                           &trans  &trans  &trans                                                                 &none
             >;
         };
