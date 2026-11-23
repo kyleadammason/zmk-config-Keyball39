@@ -119,13 +119,6 @@
             tapping-term-ms = <200>;
         };
 
-        swapper: swapper {
-            compatible = "zmk,behavior-tri-state";
-            label = "SWAPPER";
-            timeout-ms = <1000>;
-            #binding-cells = <0>;
-            bindings = <&kp LA(LC(TAB))>, <&kp TAB>, <&kp ENTER>;
-        };
     };
 
     macros {
