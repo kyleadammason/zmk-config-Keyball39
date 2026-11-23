@@ -118,17 +118,18 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-swapper: swapper {
+
+        swapper: swapper {
             compatible = "zmk,behavior-tri-state";
             label = "SWAPPER";
-            value-ms = <1000>; /* 1 second timeout */
+            value-ms = <1000>;
             bindings = <
-                &kt LCTRL  /* Lock Ctrl */
-                &kt LALT   /* Lock Alt */
-                &kp TAB    /* Tap Tab */
-                &kt LALT   /* Unlock Alt on timeout */
-                &kt LCTRL  /* Unlock Ctrl on timeout */
-                &kp RET    /* Tap Enter on timeout to confirm window selection */
+                &kt LCTRL  
+                &kt LALT   
+                &kp TAB   
+                &kt LALT  
+                &kt LCTRL 
+                &kp RET    
             >;
         };
     };
