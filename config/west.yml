@@ -4,8 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: kumamuk-git
       url-base: https://github.com/kumamuk-git
-    - name: nickconway
-      url-base: https://github.com/nickconway
+    - name: dhruvinsh
+      url-base: https://github.com/dhruvinsh
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -14,8 +14,8 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: kumamuk-git
       revision: main
-    - name: zmk-tri-state-behavior
-      remote: nickconway
+    - name: zmk-tri-state
+      remote: dhruvinsh
       revision: main
   self:
     path: config
