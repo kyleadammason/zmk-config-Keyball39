@@ -123,8 +123,7 @@
             compatible = "zmk,behavior-tri-state";
             label = "SWAPPER";
             value-ms = <1000>;
-            bindings = <&kp LA(LC(TAB)), &kp TAB, &kp ENTER
-            >;
+            bindings = <&kp LA(LC(TAB))>, <&kp TAB>, <&kp ENTER>;
         };
     };
 
