@@ -283,7 +283,7 @@
             label = "MOUSE";
             bindings = <
 &none            &none            &HoldZoom        &kp LG(TAB)  &none                      &none      &kp LG(TAB)  &HoldZoom        &none            &none
-&tog 4           &mkp RCLK        &MT_MOvsTOG 5 5  &mkp LCLK    &mkp MCLK                  &mkp MCLK  &mkp LCLK    &MT_MOvsTOG 5 5  &mkp RCLK        &tog 4
+&none            &mkp RCLK        &MT_MOvsTOG 5 5  &mkp LCLK    &mkp MCLK                  &mkp MCLK  &mkp LCLK    &MT_MOvsTOG 5 5  &mkp RCLK        &none
 &kp LC(Z)        &kp LC(X)        &kp LC(C)        &kp LC(V)    &kp LC(Y)                  &none      &mkp MB4     &mkp MB5         &MT_MOvsTOG SNIPE SNIPE  &none
 &trans           &none            &none            &trans       &trans     &trans  &trans  &trans                                                    &none
             >;
