@@ -284,7 +284,7 @@
             bindings = <
 &none            &none            &HoldZoom        &kp LG(TAB)  &none                      &none      &kp LG(TAB)  &HoldZoom        &none            &none
 &tog 4           &mkp RCLK        &MT_MOvsTOG 5 5  &mkp LCLK    &mkp MCLK                  &mkp MCLK  &mkp LCLK    &MT_MOvsTOG 5 5  &mkp RCLK        &tog 4
-&mt LC(Z) Z      &mt LC(X) X      &mt LC(C) C      &mt LC(V) V  &mt LC(Y)                  &none      &mkp MB4     &mkp MB5         &MT_MOvsTOG SNIPE SNIPE  &none
+&kpLC(Z)         &kp LC(X)        &kp LC(C)        &kp LC(V)    &kp LC(Y)                  &none      &mkp MB4     &mkp MB5         &MT_MOvsTOG SNIPE SNIPE  &none
 &trans           &none            &none            &trans       &trans     &trans  &trans  &trans                                                    &none
             >;
         };
@@ -302,10 +302,10 @@
         snipe_layer {
             label = "SNIPE";
             bindings = <
-&trans  &trans      &trans  &trans    &trans                  &trans  &trans    &trans  &trans      &trans
-&trans  &trans      &trans  &mkp MB1  &trans                  &trans  &mkp MB1  &trans  &trans      &trans
-&trans  &tog SNIPE  &trans  &trans    &trans                  &trans  &trans    &trans  &tog SNIPE  &trans
-&trans  &trans      &trans  &trans    &trans  &trans  &trans  &trans                                &trans
+&trans  &trans  &trans  &trans    &trans                  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &mkp MB1  &trans                  &trans  &mkp MB1  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans                  &trans  &trans    &trans  &tog 6  &trans
+&trans  &trans      &trans  &trans    &trans  &trans  &trans  &trans                             &trans
             >;
         };
 
