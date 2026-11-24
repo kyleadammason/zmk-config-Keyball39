@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/kumamuk-git
     - name: dhruvinsh
       url-base: https://github.com/dhruvinsh
+    - name: zettaface
+      url-base: https://github.com/zettaface
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -16,6 +18,9 @@ manifest:
       revision: main
     - name: zmk-tri-state
       remote: dhruvinsh
+      revision: main
+    - name: zmk-input-processor-keybind
+      remote: zettaface
       revision: main
   self:
     path: config
